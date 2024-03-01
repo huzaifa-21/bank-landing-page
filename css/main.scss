@@ -79,12 +79,15 @@ header {
   position: relative;
   z-index: 10;
   background-color: white;
-
+  @media (max-width: 768px) {
+    padding: 10px 0 !important;
+  }
   .container {
     .links {
       @media (max-width: 767px) {
         display: none !important;
         &.overlay {
+          
           position: absolute;
           flex-direction: column;
           display: block !important;
@@ -96,6 +99,9 @@ header {
           box-shadow: -70px 119px 192px 175px rgb(60 62 85 / 45%);
           border-radius: 5px;
           background-color: white;
+          max-width: 500px;
+          left: 50%;
+          transform: translateX(-50%);
           & a {
             padding: 1px;
           }
@@ -106,7 +112,7 @@ header {
         padding: 1.5rem 0.9rem;
         position: relative;
         color: $grayshBlue;
-        @media (max-width:767px) {
+        @media (max-width: 767px) {
           width: fit-content;
           margin: auto;
           margin-bottom: 5px;
@@ -148,11 +154,8 @@ header {
   background-position-x: 673px;
   background-position-y: -206px;
   background-color: $veryLightGray;
-  @media (max-width: 400px) {
-    background: url(../images/bg-intro-mobile.svg);
-    background-position-y: -147px;
-    background-repeat: no-repeat;
-    background-position-x: 50px;
+  @media (max-width: 992px) {
+    background-image: none;
   }
   > img {
     position: absolute;
@@ -173,6 +176,7 @@ header {
       transform: translateY(-50%);
       @media (max-width: 767px) {
         top: 60%;
+        margin: auto;
       }
       h1 {
         color: $darkBlue;
