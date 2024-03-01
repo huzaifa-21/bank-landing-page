@@ -263,6 +263,14 @@ header .container > svg {
     height: 252.16px !important;
   }
 }
+.articles .container .box .articel {
+  min-height: 240px;
+}
+@media (min-width: 1199px) {
+  .articles .container .box .articel {
+    max-height: 241px;
+  }
+}
 .articles .container .box .articel .author {
   font-size: 13px;
   color: hsl(233, 8%, 62%);

@@ -254,6 +254,10 @@ header {
         }
       }
       .articel {
+        min-height: 240px;
+        @media (min-width:1199px) {
+          max-height: 241px;
+        }
         .author {
           font-size: 13px;
           color: $grayshBlue;
